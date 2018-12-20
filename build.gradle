@@ -21,6 +21,10 @@ dependencies {
     testImplementation('io.projectreactor:reactor-test')
 }
 
+bootRun {
+    dependsOn check
+}
+
 checkstyleMain {
     source ='src/main/java'
 }
